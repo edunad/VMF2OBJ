@@ -618,9 +618,9 @@ public class VMF2OBJ {
 									"-exportformat", "tga",
 									"-format", "BGR888"};
 
-								if (vmt.translucent == 1 || vmt.alphatest == 1) {
+								/*if (vmt.translucent == 1 || vmt.alphatest == 1) {
 									command[8] = "BGRA8888"; // Only include alpha channel if it's a transparent texture
-								}
+								}*/
 
 								proc = Runtime.getRuntime().exec(command);
 								BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream()));
